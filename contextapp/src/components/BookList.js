@@ -1,6 +1,8 @@
 import React, { Component, useContext } from "react";
 import { ThemeContext } from "../contexts/ThemeContext";
 
+// without hook
+
 // class BookList extends Component {
 //   static contextType = ThemeContext;
 //   render() {
@@ -20,6 +22,8 @@ import { ThemeContext } from "../contexts/ThemeContext";
 //     );
 //   }
 // }
+
+// with hook
 
 const BookList = () => {
   const { isLightTheme, light, dark } = useContext(ThemeContext);
